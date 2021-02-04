@@ -12,17 +12,17 @@ const App = () => {
   };
 
   const onClickSwitchShowFlag = () => {
-    // console.log(faceShowFlag);
-
     setFaceShowFlag(!faceShowFlag);
   };
 
   useEffect(() => {
     if (num > 0) {
       if (num % 3 === 0) {
-        faceShowFlag || setFaceShowFlag(true);
+        // faceShowFlag || setFaceShowFlag(true);
+        setFaceShowFlag(true);
       } else {
-        faceShowFlag && setFaceShowFlag(false);
+        // faceShowFlag && setFaceShowFlag(false);
+        setFaceShowFlag(false);
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
